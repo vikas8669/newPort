@@ -17,7 +17,7 @@ import { useTheme } from "@/context/theme-provider";
 
 export function BackgroundLinesDemo() {
 
-  const { theme, setTheme } = useTheme()
+  const { theme } = useTheme()
   const isDark = theme === "dark"
   const skills = [
     { icon: isDark? Nextjs2 : Nextjd, name: "Next Js" },

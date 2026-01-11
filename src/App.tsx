@@ -1,4 +1,4 @@
-import Navbar from './components/Navbar'
+
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
 
@@ -14,11 +14,6 @@ function App() {
 
   return (
     <>
-      {/* <Navbar /> */}
-      {/* <BackgroundLinesDemo />
-    <TimelineDemo />
-    <MeteorsDemo />
-    <WavyBackgroundDemo /> */}
       <Lyout>
         <Routes>
           <Route path="/" element={<Home />} />

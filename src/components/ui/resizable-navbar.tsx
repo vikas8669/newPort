@@ -51,12 +51,12 @@ interface MobileNavMenuProps {
 }
 
 export const Navbar = ({ children, className }: NavbarProps) => {
-  const ref = useRef<HTMLDivElement>(null);
-  const { scrollY } = useScroll({
-    target: ref,
-    offset: ["start start", "end start"],
-  });
-  const [visible, setVisible] = useState<boolean>(false);
+  // const ref = useRef<HTMLDivElement>(null);
+  // const { scrollY } = useScroll({
+  //   target: ref,
+  //   offset: ["start start", "end start"],
+  // });
+  // const [visible, setVisible] = useState<boolean>(false);
 
   // useMotionValueEvent(scrollY, "change", (latest) => {
   //   if (latest > 100) {
@@ -68,7 +68,7 @@ export const Navbar = ({ children, className }: NavbarProps) => {
 
   return (
     <motion.div
-      ref={ref}
+      // ref={ref}
       // IMPORTANT: Change this to class of `fixed` if you want the navbar to be fixed
       // fixed top-0 left-0 right-0 z-50 w-full
       className={cn("fixed top-0 left-0 right-0 p-4  z-50 w-full", className)}
@@ -77,7 +77,7 @@ export const Navbar = ({ children, className }: NavbarProps) => {
         React.isValidElement(child)
           ? React.cloneElement(
               child as React.ReactElement<{ visible?: boolean }>,
-              { visible },
+              // { visible },
             )
           : child,
       )}
@@ -201,7 +201,7 @@ export const MobileNavMenu = ({
   children,
   className,
   isOpen,
-  onClose,
+  // onClose,
 }: MobileNavMenuProps) => {
   return (
     <AnimatePresence>
@@ -275,14 +275,14 @@ export const NavbarButton = ({
   const baseStyles =
     "px-4 py-2 rounded-md  button text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center";
 
-  const variantStyles = {
-    // primary:
-    //   "shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
-    secondary: "bg-transparent shadow-none dark:text-white",
-    dark: "bg-black text-white shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
-    gradient:
-      "bg-gradient-to-b from-blue-500 to-blue-700 text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset]",
-  };
+  // const variantStyles = {
+  //   // primary:
+  //   //   "shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
+  //   secondary: "bg-transparent shadow-none dark:text-white",
+  //   dark: "bg-black text-white shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
+  //   gradient:
+  //     "bg-gradient-to-b from-blue-500 to-blue-700 text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset]",
+  // };
 
   return (
     <Tag
