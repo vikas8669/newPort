@@ -9,7 +9,7 @@ export function WavyBackgroundDemo() {
         <footer className="relative w-screen h-[280px] mt-5">
       <WavyBackground containerClassName="h-full w-full">
         <p className="pt-24 text-center text-sm ">
-          ©  {currentYear} Bomo~X All rights reserved
+          ©  {currentYear} Bom~X All rights reserved
         </p>
       </WavyBackground>
     </footer>

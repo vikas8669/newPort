@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Timeline } from "@/components/ui/timeline";
 import img1 from "../assets/coding.png";
 import img2 from "../assets/coding2.png";
@@ -9,7 +9,7 @@ import w2 from '../assets/w2.png'
 import w3 from '../assets/w3.png'
 import w4 from '../assets/w4.png'
 import f1 from '../assets/f1.png'
-import f2 from '../assets/f2.png'
+// import f2 from '../assets/f2.png'
 
 export function TimelineDemo() {
     const data = [

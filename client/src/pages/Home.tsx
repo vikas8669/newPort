@@ -5,9 +5,9 @@ const Home = () => {
   return (
     <div>
       <BackgroundLinesDemo />
-          <TimelineDemo />
-          <MeteorsDemo />
-          
+      <TimelineDemo />
+      <MeteorsDemo />
+
     </div>
   )
 }

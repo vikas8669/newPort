@@ -26,19 +26,24 @@ export default function NavbarDemo() {
       name: "ContactUs",
       link: "/contact",
     },
+        {
+      name: "Blog",
+      link: "/blog",
+    },
+
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="relative w-full">
-      <Navbar className="bg-white dark:bg-black border-b border-neutral-200 dark:border-neutral-800">
+    <div className="relative w-full flex ">
+      <Navbar className="bg-white dark:bg-black border-b border-neutral-200 dark:border-neutral-800 ">
         {/* ================= Desktop ================= */}
         <NavBody className="text-neutral-900 dark:text-neutral-100">
           <NavbarLogo />
-          <NavItems items={navItems} />
+          <NavItems className="flex justify-end px-18 gap" items={navItems} />
 
-          <div className="flex items-center gap-4 px-5">
+          <div className="">
             <NavbarButton variant="primary">
               <ThemeToggle />
             </NavbarButton>

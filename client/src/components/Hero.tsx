@@ -2,22 +2,24 @@ import { BackgroundLines } from "@/components/ui/background-lines";
 import { LayoutTextFlipDemo } from "./LayoutTextFlip";
 
 import Javascript from "../assets/JS.png";
-import ReactLogo from "../assets/React.png";
-import ReduxLogo from "../assets/Redux.png";
-import Tailwind from "../assets/Tailwind.png";
-import Bootstrap from "../assets/Bootstrap.png";
-import Express from "../assets/Express.png";
-import NodeLogo from "../assets/NodeLogo.png";
-import mongodb from "../assets/mongodb.svg";
-import Photoshop from "../assets/photoshop.png";
-import Nextjd from "../assets/NextJs.png";
-import Nextjs2 from "../assets/nextjs2.png";
-import typescreept from "../assets/typescript.png";
+import ReactLogo from "@/assets/React.png";
+import ReduxLogo from "@/assets/Redux.png";
+import Tailwind from "@/assets/Tailwind.png";
+import Bootstrap from "@/assets/Bootstrap.png";
+import Express from "@/assets/Express.png";
+import NodeLogo from "@/assets/NodeLogo.png";
+import mongodb from "@/assets/mongodb.svg";
+import Photoshop from "@/assets/photoshop.png";
+import Nextjd from "@/assets/NextJs.png";
+import Nextjs2 from "@/assets/nextjs2.png";
+import typescreept from "@/assets/typescript.png";
 import { useTheme } from "@/context/theme-provider";
+
+
 
 export function BackgroundLinesDemo() {
 
-  const { theme, setTheme } = useTheme()
+  const { theme } = useTheme()
   const isDark = theme === "dark"
   const skills = [
     { icon: isDark? Nextjs2 : Nextjd, name: "Next Js" },
@@ -85,7 +87,7 @@ export function BackgroundLinesDemo() {
                 <img
                   src={tech.icon}
                   alt={tech.name}
-                  className="w-16 h-16 md:w-24 md:h-24 lg:w-20 lg:h-20 object-contain"
+                  className="w-16 h-16 md:w-24 md:h-24 lg:w-14 lg:h-15 object-contain"
                 />
                 <span className="mt-2  text-center">
                   {tech.name}
