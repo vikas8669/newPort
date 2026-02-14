@@ -8,8 +8,6 @@ import Projects from './pages/Projects'
 import Lyout from './components/Lyout'
 import Blog from './pages/Blog'
 
-
-
 function App() {
 
 
