@@ -15,6 +15,8 @@ import Nextjs2 from "@/assets/nextjs2.png";
 import typescreept from "@/assets/typescript.png";
 import { useTheme } from "@/context/theme-provider";
 
+
+
 export function BackgroundLinesDemo() {
 
   const { theme } = useTheme()
