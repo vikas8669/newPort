@@ -10,7 +10,7 @@ import {
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import hero from "@/assets/Hero.jpg"
 
 interface NavbarProps {
   children: React.ReactNode;
@@ -243,8 +243,8 @@ export const NavbarLogo = () => {
     //   className="relative z-20 mr-4 flex items-center space-x-2 px-2  py-1 text-sm font-normal text-black"
     // >
       <Link to="/"className="relative z-20 mr-4 flex items-center space-x-2 px-2  py-1 text-sm font-normal text-black">
-      <img
-        src="https://assets.aceternity.com/logo-dark.png"
+      <img className=" rounded-2xl"
+        src={hero}
         alt="logo"
         width={30}
         height={30}
